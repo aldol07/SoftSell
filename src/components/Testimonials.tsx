@@ -30,7 +30,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
         >
           What Our Customers Say
         </motion.h2>
@@ -52,12 +52,12 @@ export default function Testimonials() {
                   />
                 ))}
               </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
+              <p className="text-gray-700 dark:text-gray-200 mb-6 italic">
                 &quot;{testimonial.content}&quot;
               </p>
 
               <div>
-                <p className="font-semibold">{testimonial.name}</p>
+                <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
                 <p className="text-gray-500 dark:text-gray-400">
                   {testimonial.role}, {testimonial.company}
                 </p>

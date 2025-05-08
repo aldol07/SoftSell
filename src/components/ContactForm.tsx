@@ -89,7 +89,7 @@ export default function ContactForm() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
         >
           Get Started
         </motion.h2>
@@ -101,7 +101,7 @@ export default function ContactForm() {
           className="space-y-6"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-2">
+            <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-900 dark:text-white">
               Name
             </label>
             <input
@@ -111,8 +111,8 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               className={`w-full px-4 py-2 rounded-lg border ${
-                errors.name ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                errors.name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+              } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -120,7 +120,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-2">
+            <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-900 dark:text-white">
               Email
             </label>
             <input
@@ -130,8 +130,8 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               className={`w-full px-4 py-2 rounded-lg border ${
-                errors.email ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                errors.email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+              } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -139,7 +139,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="company" className="block text-sm font-medium mb-2">
+            <label htmlFor="company" className="block text-sm font-medium mb-2 text-gray-900 dark:text-white">
               Company
             </label>
             <input
@@ -149,8 +149,8 @@ export default function ContactForm() {
               value={formData.company}
               onChange={handleChange}
               className={`w-full px-4 py-2 rounded-lg border ${
-                errors.company ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                errors.company ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+              } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.company && (
               <p className="mt-1 text-sm text-red-500">{errors.company}</p>
@@ -158,7 +158,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="licenseType" className="block text-sm font-medium mb-2">
+            <label htmlFor="licenseType" className="block text-sm font-medium mb-2 text-gray-900 dark:text-white">
               License Type
             </label>
             <select
@@ -167,8 +167,8 @@ export default function ContactForm() {
               value={formData.licenseType}
               onChange={handleChange}
               className={`w-full px-4 py-2 rounded-lg border ${
-                errors.licenseType ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                errors.licenseType ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+              } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             >
               <option value="">Select a license type</option>
               {licenseTypes.map(type => (
@@ -183,7 +183,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
+            <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-900 dark:text-white">
               Message
             </label>
             <textarea
@@ -193,8 +193,8 @@ export default function ContactForm() {
               onChange={handleChange}
               rows={4}
               className={`w-full px-4 py-2 rounded-lg border ${
-                errors.message ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+              } bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
             />
             {errors.message && (
               <p className="mt-1 text-sm text-red-500">{errors.message}</p>

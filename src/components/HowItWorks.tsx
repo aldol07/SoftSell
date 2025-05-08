@@ -29,7 +29,7 @@ export default function HowItWorks() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
         >
           How It Works
         </motion.h2>
@@ -46,8 +46,8 @@ export default function HowItWorks() {
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <step.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{step.description}</p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{step.title}</h3>
+              <p className="text-gray-700 dark:text-gray-200">{step.description}</p>
             </motion.div>
           ))}
         </div>
