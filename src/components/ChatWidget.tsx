@@ -40,8 +40,6 @@ export default function ChatWidget() {
     setIsLoading(true)
 
     try {
-      // In a real application, you would call your backend API here
-      // For now, we'll simulate a response
       const response = await simulateLLMResponse(userMessage)
       setMessages(prev => [...prev, { role: 'assistant', content: response }])
     } catch (error) {
@@ -59,7 +57,7 @@ export default function ChatWidget() {
   }
 
   const simulateLLMResponse = async (message: string): Promise<string> => {
-    // Simulate API delay
+    
     await new Promise(resolve => setTimeout(resolve, 1000))
 
     const lowerMessage = message.toLowerCase()

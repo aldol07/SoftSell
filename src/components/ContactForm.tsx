@@ -54,7 +54,6 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (validateForm()) {
-      // In a real application, you would send the form data to your backend
       console.log('Form submitted:', formData)
       alert('Thank you for your submission! We will contact you soon.')
       setFormData({
